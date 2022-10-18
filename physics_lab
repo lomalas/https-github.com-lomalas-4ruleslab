@@ -1,0 +1,60 @@
+#imports
+import numpy as np
+
+#Rule 1 
+c = float(input())
+
+def rule1(c):
+    return c 
+print("Rule 1:",c)
+
+#Rule 2
+e1 = float(input())
+e2 = float(input("Uncertanty "))
+m = float(input())
+
+def rule2(e1,e2,m):
+    g = (e2/e1)*m
+    return g
+    
+g = rule2
+print("Rule 2:", g)
+
+r = float(input())
+t = float(input())
+v = float(input())
+
+x = rule2(r,t,v)
+
+print("Final dx:", x)
+
+#Rule 3
+
+a = float(input())
+b = float(input())
+
+def rule3(a,b):
+    dq = np.sqrt(a**2 + b**2)
+    return dq
+
+dq = rule3 
+print("Rule 3:", dq)
+
+dx1 = float(input())
+dx2 = float(input())
+
+dx = rule3(dx1, dx2)
+
+print("Final dx:", dx)
+
+#Rule 4
+a1 = float(input())
+a2 = float(input())
+b1 = float(input())
+b2 = float(input())
+
+def rule4(a1,a2,b1,b2):
+    un = np.sqrt((a2/a1)**2 + (b2/b1)**2)
+    return un
+
+print("Rule 4:", 4)
