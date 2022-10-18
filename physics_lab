@@ -37,6 +37,8 @@ def rule3(a,b):
     dq = np.sqrt(a**2 + b**2)
     return dq
 
+$Q = \sqrt{(\delta A)^2 + (\delta B)^2}$
+
 dq = rule3 
 print("Rule 3:", dq)
 
